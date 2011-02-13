@@ -10,7 +10,9 @@
 
 
 @interface ChromaticApp : NSObject {
-
+	NSColorPanel *colorPanel;
 }
+
+- (void)chromatic;
 
 @end
