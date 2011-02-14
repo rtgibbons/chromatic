@@ -92,6 +92,7 @@
 }
 
 - (NSString *)calculatePantone:(NSColor *)color {
+	//Pantone Sucks - ignoring for now, possibly for ever;
 	return @"<unknown>";
 }
 
