@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* Chromatic.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* Chromatic.xib */; };
 		4B5BD82713088919009A841B /* ChromaticApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5BD82613088919009A841B /* ChromaticApp.m */; };
+		4B5BDB1D1308FEC4009A841B /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 4B5BDB1C1308FEC4009A841B /* TODO */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -25,6 +26,7 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		4B5BD82513088919009A841B /* ChromaticApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChromaticApp.h; sourceTree = "<group>"; };
 		4B5BD82613088919009A841B /* ChromaticApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChromaticApp.m; sourceTree = "<group>"; };
+		4B5BDB1C1308FEC4009A841B /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Chromatic-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Chromatic-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Chromatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chromatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,6 +86,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				4B5BDB1C1308FEC4009A841B /* TODO */,
 			);
 			name = Chromatic;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* Chromatic.xib in Resources */,
+				4B5BDB1D1308FEC4009A841B /* TODO in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

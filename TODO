@@ -1,0 +1,9 @@
+- make pretty
+- Keep history of colorList (save and load)
+- Preferences
+  - Floating Window
+  - alpha channel
+  - Add last color to colorList
+  - calibrated vs device colorSpace
+- click to copy to clipboard
+- formating of strings
