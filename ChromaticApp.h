@@ -21,5 +21,10 @@
 }
 
 - (void)chromatic;
+- (NSString *)calculateHex:(NSColor *)color;
+- (NSString *)calculateRgb:(NSColor *)color;
+- (NSString *)calculateHsl:(NSColor *)color;
+- (NSString *)calculateCmyk:(NSColor *)color;
+- (NSString *)calculatePantone:(NSColor *)color;
 
 @end
