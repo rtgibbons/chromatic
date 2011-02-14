@@ -91,4 +91,9 @@
 	BOOL shouldGenerateDevice = TRUE;
 	return [[colorPanel color] colorUsingColorSpaceName:(shouldGenerateDevice ? NSDeviceRGBColorSpace : NSCalibratedRGBColorSpace)];
 }
+
+- (BOOL) applicationShouldTerminateAfterLastWindowClosed:(NSApplication *) theApplication {
+    return YES;
+}
+
 @end
