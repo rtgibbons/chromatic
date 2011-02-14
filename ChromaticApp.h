@@ -21,6 +21,7 @@
 }
 
 - (void)chromatic;
+- (NSColor *)correctedColor;
 - (NSString *)calculateHex:(NSColor *)color;
 - (NSString *)calculateRgb:(NSColor *)color;
 - (NSString *)calculateHsl:(NSColor *)color;

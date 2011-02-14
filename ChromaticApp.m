@@ -28,11 +28,18 @@
 	return self;
 }
 
-- (void)chromatic {
+- (void)awakeFromNib {
+	[colorPanel makeKeyAndOrderFront:self];
 	[colorPanel setAccessoryView:colorAccessoryView];
-	[hexColor setStringValue:[self calculateHex:[colorPanel color]]];
-	[rgbColor setStringValue:[self calculateRgb:[colorPanel color]]];
-	[hslColor setStringValue:[self calculateHsl:[colorPanel color]]];
+	[self chromatic];
+}
+
+- (void)chromatic{
+	NSColor *color = [self correctedColor];
+	
+	[hexColor setStringValue:[self calculateHex:color]];
+	[rgbColor setStringValue:[self calculateRgb:color]];
+	[hslColor setStringValue:[self calculateHsl:color]];
 }
 
 - (NSString *) calculateHex:(NSColor *)color {
@@ -72,4 +79,16 @@
 	return [NSString stringWithFormat:@"%@, %@%%, %@%%", h, s, l];
 }
 
+- (NSString *)calculateCmyk:(NSColor *)color {
+	return @"<unknown";
+}
+
+- (NSString *)calculatePantone:(NSColor *)color {
+	return @"<unknown>";
+}
+
+- (NSColor *)correctedColor {
+	BOOL shouldGenerateDevice = TRUE;
+	return [[colorPanel color] colorUsingColorSpaceName:(shouldGenerateDevice ? NSDeviceRGBColorSpace : NSCalibratedRGBColorSpace)];
+}
 @end
