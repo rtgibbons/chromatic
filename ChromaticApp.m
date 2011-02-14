@@ -20,6 +20,7 @@
 		[colorPanel setTitle:@"Chromatic"];
 		[colorPanel setShowsAlpha:YES];
 		[colorPanel setHidesOnDeactivate:NO];
+		[colorPanel setFloatingPanel:NO];
 		[colorPanel makeKeyAndOrderFront:self];	
 		
 		[colorPanel setTarget:self];
