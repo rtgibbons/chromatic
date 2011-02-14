@@ -40,6 +40,7 @@
 	[hexColor setStringValue:[self calculateHex:color]];
 	[rgbColor setStringValue:[self calculateRgb:color]];
 	[hslColor setStringValue:[self calculateHsl:color]];
+	[cmykColor setStringValue:[self calculateCmyk:[[colorPanel color] colorUsingColorSpaceName:NSDeviceCMYKColorSpace]]];
 }
 
 - (NSString *) calculateHex:(NSColor *)color {
@@ -80,7 +81,14 @@
 }
 
 - (NSString *)calculateCmyk:(NSColor *)color {
-	return @"<unknown";
+	NSString *c; NSString *m; NSString *y; NSString *k;
+	
+	c = [NSString stringWithFormat:@"%d", (unsigned int)(100*[color cyanComponent])];
+	m = [NSString stringWithFormat:@"%d", (unsigned int)(100*[color magentaComponent])];
+	y = [NSString stringWithFormat:@"%d", (unsigned int)(100*[color yellowComponent])];
+	k = [NSString stringWithFormat:@"%d", (unsigned int)(100*[color blackComponent])];
+	
+	return [NSString stringWithFormat:@"%@%%, %@%%, %@%%, %@%%", c, m, y, k];
 }
 
 - (NSString *)calculatePantone:(NSColor *)color {
