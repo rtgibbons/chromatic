@@ -19,7 +19,7 @@
 		
 		[colorPanel setTitle:@"Chromatic"];
 		[colorPanel setShowsAlpha:YES];
-		
+		[colorPanel setHidesOnDeactivate:NO];
 		[colorPanel makeKeyAndOrderFront:self];	
 		
 		[colorPanel setTarget:self];
