@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface ChromaticApp : NSObject {
+@interface ChromaticApp : NSObject <NSWindowDelegate> {
 	NSColorPanel *colorPanel;
 	
 	IBOutlet NSView *colorAccessoryView;

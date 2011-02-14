@@ -16,7 +16,7 @@
 	if (self = [super init]) {
 		colorPanel = [NSColorPanel sharedColorPanel];
 		
-		
+		[colorPanel setDelegate:self];
 		[colorPanel setTitle:@"Chromatic"];
 		[colorPanel setShowsAlpha:YES];
 		[colorPanel setHidesOnDeactivate:NO];
@@ -100,8 +100,8 @@
 	return [[colorPanel color] colorUsingColorSpaceName:(shouldGenerateDevice ? NSDeviceRGBColorSpace : NSCalibratedRGBColorSpace)];
 }
 
-- (BOOL) applicationShouldTerminateAfterLastWindowClosed:(NSApplication *) theApplication {
-    return YES;
+- (void)windowWillClose:(NSNotification *)notification {
+	[NSApp terminate:self];
 }
 
 @end
