@@ -11,6 +11,13 @@
 
 @interface ChromaticApp : NSObject {
 	NSColorPanel *colorPanel;
+	
+	IBOutlet NSView *colorAccessoryView;
+	IBOutlet NSTextField *hexColor;
+	IBOutlet NSTextField *rgbColor;
+	IBOutlet NSTextField *hslColor;
+	IBOutlet NSTextField *cmykColor;
+	IBOutlet NSTextField *pantoneColor;
 }
 
 - (void)chromatic;

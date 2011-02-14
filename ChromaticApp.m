@@ -19,7 +19,8 @@
 		
 		[colorPanel setTitle:@"Chromatic"];
 		[colorPanel setShowsAlpha:YES];
-		[colorPanel makeKeyAndOrderFront:self];
+		
+		[colorPanel makeKeyAndOrderFront:self];	
 		
 		[colorPanel setTarget:self];
 		[colorPanel setAction:@selector(chromatic)];
@@ -28,7 +29,9 @@
 }
 
 - (void)chromatic {
-	//Start Doing Stuff
+	
+	[colorPanel setAccessoryView:colorAccessoryView];
+	[hexColor setStringValue:[NSString stringWithFormat:@"%i", [colorPanel color]]];
 }
 
 
