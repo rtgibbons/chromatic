@@ -13,7 +13,7 @@
 
 
 - (id)init {
-	if (self = [super init]) {
+	if ((self = [super init])) {
 		colorPanel = [NSColorPanel sharedColorPanel];
 		
 		[colorPanel setDelegate:self];
@@ -100,6 +100,25 @@
 - (NSColor *)correctedColor {
 	BOOL shouldGenerateDevice = TRUE;
 	return [[colorPanel color] colorUsingColorSpaceName:(shouldGenerateDevice ? NSDeviceRGBColorSpace : NSCalibratedRGBColorSpace)];
+}
+
+- (IBAction)copyButton:(id)sender {
+    NSPasteboard *pasteboard = [NSPasteboard generalPasteboard];
+    [pasteboard clearContents];
+    
+    NSString *element = [sender alternateTitle];
+    NSString *value;
+    if ( [element isEqualToString:@"copyHex"] ) {
+        value = [hexColor stringValue];
+    } else if ( [element isEqualToString:@"copyRGB"] ) {
+        value = [rgbColor stringValue];
+    } else if ( [element isEqualToString:@"copyHSL"] ) {
+        value = [hslColor stringValue];
+    } else if ( [element isEqualToString:@"copyCMYK"] ) {
+        value = [cmykColor stringValue];
+    }
+    [pasteboard declareTypes:[NSArray arrayWithObjects:NSStringPboardType, nil] owner:nil];
+    [pasteboard setString:value forType:NSStringPboardType];
 }
 
 - (void)windowWillClose:(NSNotification *)notification {

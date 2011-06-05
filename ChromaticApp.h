@@ -28,4 +28,6 @@
 - (NSString *)calculateCmyk:(NSColor *)color;
 - (NSString *)calculatePantone:(NSColor *)color;
 
+- (IBAction)copyButton:(id)sender;
+
 @end
