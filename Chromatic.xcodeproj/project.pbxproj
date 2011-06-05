@@ -107,8 +107,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4B9E16BD139BE6D10087E2A0 /* copy-light.png */,
-				4B9E16BE139BE6D10087E2A0 /* copy-dark.png */,
+				4B9E16CA139BEF770087E2A0 /* Images */,
 				8D1107310486CEB800E47090 /* Chromatic-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* Chromatic.xib */,
@@ -123,6 +122,15 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B9E16CA139BEF770087E2A0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4B9E16BD139BE6D10087E2A0 /* copy-light.png */,
+				4B9E16BE139BE6D10087E2A0 /* copy-dark.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
