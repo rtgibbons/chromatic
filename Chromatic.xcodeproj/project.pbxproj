@@ -10,7 +10,6 @@
 		1DDD58160DA1D0A300B32029 /* Chromatic.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* Chromatic.xib */; };
 		4B5BD82713088919009A841B /* ChromaticApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5BD82613088919009A841B /* ChromaticApp.m */; };
 		4B5BDB1D1308FEC4009A841B /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 4B5BDB1C1308FEC4009A841B /* TODO */; };
-		4B99814113C8B8FE0052590F /* chromatic.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B99814013C8B8FE0052590F /* chromatic.png */; };
 		4B99814313C8BAD40052590F /* chromatic.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4B99814213C8BAD40052590F /* chromatic.icns */; };
 		4B9E16BF139BE6D10087E2A0 /* copy-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B9E16BD139BE6D10087E2A0 /* copy-light.png */; };
 		4B9E16C0139BE6D10087E2A0 /* copy-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B9E16BE139BE6D10087E2A0 /* copy-dark.png */; };
@@ -31,7 +30,6 @@
 		4B5BD82513088919009A841B /* ChromaticApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChromaticApp.h; sourceTree = "<group>"; };
 		4B5BD82613088919009A841B /* ChromaticApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChromaticApp.m; sourceTree = "<group>"; };
 		4B5BDB1C1308FEC4009A841B /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
-		4B99814013C8B8FE0052590F /* chromatic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chromatic.png; sourceTree = "<group>"; };
 		4B99814213C8BAD40052590F /* chromatic.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = chromatic.icns; sourceTree = "<group>"; };
 		4B9E16BD139BE6D10087E2A0 /* copy-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "copy-light.png"; sourceTree = "<group>"; };
 		4B9E16BE139BE6D10087E2A0 /* copy-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "copy-dark.png"; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				4B99814213C8BAD40052590F /* chromatic.icns */,
-				4B99814013C8B8FE0052590F /* chromatic.png */,
 				4B9E16BD139BE6D10087E2A0 /* copy-light.png */,
 				4B9E16BE139BE6D10087E2A0 /* copy-dark.png */,
 			);
@@ -194,7 +191,6 @@
 				4B5BDB1D1308FEC4009A841B /* TODO in Resources */,
 				4B9E16BF139BE6D10087E2A0 /* copy-light.png in Resources */,
 				4B9E16C0139BE6D10087E2A0 /* copy-dark.png in Resources */,
-				4B99814113C8B8FE0052590F /* chromatic.png in Resources */,
 				4B99814313C8BAD40052590F /* chromatic.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
